@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>벨류인솔루션</title>
+<meta name="description" content="벨류인솔루션 — 매일 쓰는 작은 앱을 만듭니다. 첫 번째 앱: 점찍기, 오늘의 운세로 쓰는 30초 일기.">
+<style>
+  :root { --bg: #F5F4FF; --card: #fff; --ink: #17161F; --ink2: #4B4A57; --muted: #7E7D8E; --p: #6C5CE7; --p2: #B79CFF; --lime: #C9F55A; --line: #E6E4F5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0F0F16; --card: #1A1A24; --ink: #F2F1FA; --ink2: #C9C8D6; --muted: #7E7D8E; --p: #8B7BFF; --line: #26263A; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, system-ui, sans-serif; letter-spacing: -0.01em; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 36px; }
+  .mark { width: 44px; height: 44px; border-radius: 13px; background: linear-gradient(135deg, var(--p), var(--p2)); position: relative; flex: none; }
+  .mark::after { content: ""; position: absolute; left: 13px; top: 13px; width: 18px; height: 18px; border-radius: 50%; background: var(--lime); }
+  h1 { font-size: 26px; margin: 0; }
+  .tag { color: var(--muted); font-size: 14px; margin: 2px 0 0; }
+  h2 { font-size: 19px; margin: 36px 0 10px; color: var(--p); }
+  p, li { color: var(--ink2); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; }
+  .app { display: flex; gap: 18px; align-items: flex-start; }
+  .app img { width: 84px; height: 84px; border-radius: 22px; flex: none; }
+  .app h3 { margin: 0 0 4px; font-size: 18px; }
+  .app p { margin: 0 0 8px; }
+  .badge { display: inline-block; font-size: 13px; color: var(--p); background: color-mix(in srgb, var(--p) 10%, var(--card)); border-radius: 999px; padding: 3px 10px; }
+  a { color: var(--p); }
+  dl { display: grid; grid-template-columns: 96px 1fr; gap: 6px 12px; margin: 0; }
+  dt { color: var(--muted); } dd { margin: 0; color: var(--ink2); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <header><div class="mark"></div><div><h1>벨류인솔루션</h1><p class="tag">Valuein Solution · 매일 쓰는 작은 앱을 만듭니다</p></div></header>
+
+  <p>벨류인솔루션은 대한민국 경상남도 양산에 있는 소프트웨어 개발사입니다. 계정도 서버도 없이 기기 안에서만 동작하는, 가볍고 정직한 모바일 앱을 만듭니다.</p>
+
+  <h2>만드는 것</h2>
+  <div class="card app">
+    <img src="icon.png" alt="점찍기 아이콘">
+    <div>
+      <h3>점찍기 <span class="badge">Android · 출시 준비 중</span></h3>
+      <p>오늘의 운세로 쓰는 30초 일기. 생일만 넣으면 사주 일간 기준 오늘 점수와 한 줄이 나오고, 기분 하나와 한 줄을 남기면 달력에 점이 쌓입니다. 어제 쓴 한 줄에는 아침 답장이 옵니다.</p>
+      <p><a href="https://valuein02.github.io/jjikgi-privacy/">개인정보처리방침</a></p>
+    </div>
+  </div>
+
+  <h2>연락처</h2>
+  <div class="card">
+    <dl>
+      <dt>회사명</dt><dd>벨류인솔루션</dd>
+      <dt>이메일</dt><dd><a href="mailto:valuein02@gmail.com">valuein02@gmail.com</a></dd>
+      <dt>소재지</dt><dd>경상남도 양산시</dd>
+      <dt>Google Play</dt><dd>개발자명 벨류인솔루션</dd>
+    </dl>
+  </div>
+
+  <footer>© 2026 벨류인솔루션. 모든 앱의 사용자 데이터는 사용자 기기에만 저장되며 당사는 이를 수집하지 않습니다.</footer>
+</main>
+</body>
+</html>
