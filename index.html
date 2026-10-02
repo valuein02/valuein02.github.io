@@ -23,7 +23,8 @@
   .app img { width: 84px; height: 84px; border-radius: 22px; flex: none; }
   .app h3 { margin: 0 0 4px; font-size: 18px; }
   .app p { margin: 0 0 8px; }
-  .badge { display: inline-block; font-size: 13px; color: var(--p); background: color-mix(in srgb, var(--p) 10%, var(--card)); border-radius: 999px; padding: 3px 10px; }
+  .badge { display: inline-block; font-size: 13px; color: var(--p); background: color-mix(in srgb, var(--p) 10%, var(--card)); border-radius: 999px; padding: 3px 10px; text-decoration: none; }
+  .badge:hover { background: color-mix(in srgb, var(--p) 18%, var(--card)); }
   a { color: var(--p); }
   dl { display: grid; grid-template-columns: 96px 1fr; gap: 6px 12px; margin: 0; }
   dt { color: var(--muted); } dd { margin: 0; color: var(--ink2); }
@@ -40,9 +41,9 @@
   <div class="card app">
     <img src="icon.png" alt="점찍기 아이콘">
     <div>
-      <h3>점찍기 <span class="badge">Android · 출시 준비 중</span></h3>
+      <h3>점찍기 <a class="badge" href="https://play.google.com/store/apps/details?id=com.jjikgi.app">Google Play에서 받기</a></h3>
       <p>오늘의 운세로 쓰는 30초 일기. 생일만 넣으면 사주 일간 기준 오늘 점수와 한 줄이 나오고, 기분 하나와 한 줄을 남기면 달력에 점이 쌓입니다. 어제 쓴 한 줄에는 아침 답장이 옵니다.</p>
-      <p><a href="https://valuein02.github.io/jjikgi-privacy/">개인정보처리방침</a></p>
+      <p><a href="https://play.google.com/store/apps/details?id=com.jjikgi.app">Google Play에서 보기</a> · <a href="https://valuein02.github.io/jjikgi-privacy/">개인정보처리방침</a></p>
     </div>
   </div>
 
@@ -52,7 +53,7 @@
       <dt>회사명</dt><dd>벨류인솔루션</dd>
       <dt>이메일</dt><dd><a href="mailto:valuein02@gmail.com">valuein02@gmail.com</a></dd>
       <dt>소재지</dt><dd>경상남도 양산시</dd>
-      <dt>Google Play</dt><dd>개발자명 벨류인솔루션</dd>
+      <dt>Google Play</dt><dd>개발자명 벨류인솔루션 · <a href="https://play.google.com/store/apps/details?id=com.jjikgi.app">점찍기</a></dd>
     </dl>
   </div>
 
